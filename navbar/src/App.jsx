@@ -3,9 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import BrandExample from "./Navbar"; 
-import SearchBar from "./SearchBar"; 
+// import SearchBar from "./SearchBar"; 
 import Sidebar from './components/Sidebar'
 // import { Button } from 'react-bootstrap';
+import BodyShorthandExample from "./card";
 
 function App() {
 
@@ -14,8 +15,9 @@ function App() {
     <BrandExample />
     <div className="main">
       <Sidebar />
-      <div className="container">
-        <SearchBar />
+        <div className="container">
+          <div><BodyShorthandExample/></div>
+     
     </div>
       {/* <div className="container">
         <h1 className="title">My React App</h1>
