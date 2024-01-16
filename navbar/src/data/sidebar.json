@@ -1,19 +1,30 @@
 [
     {
-        "title": "New Project",
-        "isButton": true,
-        "action": "Your Button Action" 
-    },
+      "title": "Status",
+      "path": "/archived-projects",
+      "childrens": [
+            {
+              "title": "Solved"
+            },
+            {
+              "title": "Unsolved"
+            }
+          ]
+        },
     {
-        "title": "All Projects",
-        "path": "/all-projects"
-    },
-    {
-        "title": "Archived Projects",
-        "path": "/archived-projects"
-    },
-    {
-        "title": "Trashed Projects",
-        "path": "/trashed-projects"
-    }
-]
+      "title": "Skills",
+      "path": "/archived-projects",
+      "childrens": [
+            {
+              "title": "Basic"
+            },
+            {
+              "title": "Intermediate"
+            },
+            {
+              "title": "Hard"
+            }
+          ]
+        }
+  ]
+  

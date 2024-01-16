@@ -1,20 +1,15 @@
-import Card from 'react-bootstrap/Card';
+import React from 'react';
+import CustomCard from './CardItem'; // Import the CustomCard component
+import data from './data/carddata.json'; // Import your JSON data
 
-function BodyShorthandExample() {
-    const a = [
-        {
-            title: "card",
-            body: "xtz" ,         
-        },
-    ]
+function YourMainComponent() {
   return (
-    <Card>
-      <Card.Body>
-        <Card.Title>{a[0].title}</Card.Title>
-        <Card.Text>{a[0].body}</Card.Text>
-      </Card.Body>
-    </Card>
+    <div>
+      {data.map((item, index) => (
+        <CustomCard key={index} title={item.title} body={item.body}/>
+      ))}
+    </div>
   );
 }
 
-export default BodyShorthandExample;
+export default YourMainComponent;
